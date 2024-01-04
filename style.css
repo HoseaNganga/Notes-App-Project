@@ -1,0 +1,96 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+/* UNIVERSAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENERAL STYLES */
+html{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    background-color: #d3d3d3;
+    padding: 1rem;
+}
+
+.add{
+    position: absolute;
+    top: 1;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-family: inherit;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 4px 4px black;
+    cursor: pointer;
+}
+
+.cardContainer{
+    width: 400px;
+    height: 400px;
+    margin-top: 3rem;
+    background-color: white;
+    box-shadow: 0px 3px 3px black;
+}
+
+.cardHeader{
+    background-color: green;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.cardHeader .delete{
+    margin-right: 0.5rem;
+}
+
+.cardHeader button{
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cardBody{
+    max-width: 400px;
+    height: 371px;
+    
+}
+
+ .mainContent{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    
+} 
+
+textarea{
+    font-family: inherit;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
+}
