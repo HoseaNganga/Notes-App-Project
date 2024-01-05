@@ -2,6 +2,31 @@
 
 This project features a simple, dynamic, and interactive note app created using HTML, CSS, and Vanilla JavaScript.
 
+## Table of Contents
+- [Screenshots](#screenshots)
+- [Description](#description)
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Local Storage](#local-storage)
+- [License](#license)
+- [Author](#author)
+
+
+## Screenshots
+1. Screenshot1
+
+<img src="screenshots/screenshot1.PNG" width="350px">
+
+2. Screenshot2
+
+<img src="screenshots/screenshot2.PNG" width="350px">
+
+3. Screenshot3
+
+<img src="screenshots/screenshot3.PNG" width="350px">
+
 ## Description
 
 The Notes App provides a user-friendly interface for creating and managing notes. Users can add new notes, edit them, delete them, and store the notes locally. The app is designed to be straightforward and easy to use.
@@ -49,3 +74,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - **Hosea Nganga**
 
 Feel free to use, modify, and contribute to this Notes App project!
+
+
+
+
+

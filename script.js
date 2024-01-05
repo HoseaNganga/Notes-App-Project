@@ -35,29 +35,29 @@ function logData(text=``){  //SET DEFAULT VALUE TO AN EMPTY STRING
     //CALL RELEVANT DOM ELEMENTS
     const editButton=newDivEl.querySelector(`#editButton`);
     const deleteButton=newDivEl.querySelector(`#deleteButton`);
-    const storeContent=newDivEl.querySelector(`.mainContent`);
+    const mainContent=newDivEl.querySelector(`.mainContent`);
     const textarea=newDivEl.querySelector(`textarea`);
     textarea.value=text;
 
     //ADD EVENT LISTENER TO THE EDIT BUTTON TO TOGGLE HIDDEN CLASS
     editButton.addEventListener(`click`,()=>{
-        storeContent.classList.toggle(`hidden`);
+        mainContent.classList.toggle(`hidden`);
         textarea.classList.toggle(`hidden`);
         if(textarea.classList.contains(`hidden`)){
-            if(confirm(`Click Okay To Save`)){
-                storeContent.style.backgroundColor=`grey`;
-            }
-        
+            mainContent.style.backgroundColor="grey";
         }
-        
+        updateLs();
     })
+    
 
     //ADD EVENT LISTENER TO GET TEXT AREA INPUT
     textarea.addEventListener(`input`,(e)=>{
         let textAreaInput=e.target.value;
+
         
         //UPDATE VALUE TO THE MAIN DIV
-        storeContent.innerHTML=`<p>${textAreaInput}</p>`;
+        mainContent.innerHTML=`<p>${textAreaInput}</p>`;
+        console.log(mainContent.innerHTML);
         updateLs();
     })
 
